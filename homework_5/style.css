@@ -1,34 +1,38 @@
 /*This style sheet is ordered in the same way as the HTML*/
 
-/*Style for the body of the page*/
-body {
-  background-color: #D6EACD; /*Makes background color light green*/
-  display: flex; /*Creates a flex display for the whole body*/
-  flex-direction: column; /*Orders flex in a column*/
-  height: 100vh; /* Adjusts contents of body to fit within the screen*/
-  margin: 0px; /*Deletes margin so that the background color goes to the edges of the page*/
+/* ---------- PART 1 - Home Page ----------- */
 
+/*Style for the body of the page*/
+
+body {
+  background-color: #D6EACD;    /*Makes background color light green*/
+  display: flex;    /*Creates a flex display for the whole body*/
+  flex-direction: column;     /*Orders flex in a column*/
+  height: 100vh;    /* Adjusts contents of body to fit within the screen*/
+  margin: 0px;    /*Deletes margin so that the background color goes to the edges of the page*/
 }
 
 /*Navigation Bar at the top of the page*/
+
 .navBar {
-    display: flex; /* Puts list item horizontally across page by placing them in flexbox dispaly*/
-    justify-content: space-between;
-    align-items: end; /* all items are shifted down to the bottom of the nav par*/
-    list-style-type: none; /* removes bullets from the list*/
-    padding: 0; /* aligns items to the left */
-    background-color:white; /* makes background of navigation bar white*/
-    margin: 0px; /* removes the margin of this box to align it with the top of the page */
-    height: 150px; /*Makes the background color fill the entire container within the grid*/
+    display: flex;    /* Puts list item horizontally across page by placing them in flexbox dispaly*/
+    justify-content: space-between; /*Distributes the content evenly across the width of the page*/
+    align-items: end;     /* all items are shifted down to the bottom of the nav par*/
+    list-style-type: none;    /* removes bullets from the list*/
+    padding: 0;     /* aligns items to the left */
+    background-color:white;     /* makes background of navigation bar white*/
+    margin: 0px;    /* removes the margin of this box to align it with the top of the page */
+    height: 150px;    /*Makes the background color fill the entire container within the grid*/
   }
 
   .navBarButtons {
-    display: flex;
+    display: flex;    /*Aligns the buttons in a horizontal row*/
   }
 
 /*Styling for the 'Muddy Paws' icon within the navigation bar*/
+
   #homeIcon {
-    width: 500px;
+    width: 500px;   /*Changes the size of the icon*/
     height: auto;
   }
 
@@ -105,9 +109,9 @@ li a:hover {
 
 .productImage {
     height: 200px;
-    width: 200px; /* Sets height/width as same to create a square image*/
-    border-radius: 30px; /* Rounds corners of images*/
-    border: 7px solid white; /*Creates a border around images*/
+    width: 200px;       /* Sets height/width as same to create a square image*/
+    border-radius: 30px;      /* Rounds corners of images*/
+    border: 7px solid white;      /*Creates a border around images*/
     margin-left: 10px;
 }
 
@@ -132,4 +136,26 @@ li a:hover {
   text-align: center;
   background-color: #607E52;
   color: #D6EACD;
+}
+
+/*---------- PART 2 - Browse Shop Page -----------*/
+
+.shopBody {
+  background-color:white; /*Makes background color light green*/
+  display: flex; /*Creates a flex display for the whole body*/
+  flex-direction: column; /*Orders flex in a column*/
+  height: 100vh; /* Adjusts contents of body to fit within the screen*/
+  margin: 0px; /*Deletes margin so that the background color goes to the edges of the page*/
+
+}
+
+.navBar.shop {
+  display: flex; /* Puts list item horizontally across page by placing them in flexbox dispaly*/
+  justify-content: space-between;
+  align-items: end; /* all items are shifted down to the bottom of the nav par*/
+  list-style-type: none; /* removes bullets from the list*/
+  padding: 0; /* aligns items to the left */
+  background-color:#D6EACD; /* makes background of navigation bar white*/
+  margin: 0px; /* removes the margin of this box to align it with the top of the page */
+  height: 150px; /*Makes the background color fill the entire container within the grid*/
 }
