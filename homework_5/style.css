@@ -159,3 +159,52 @@ li a:hover {
   margin: 0px; /* removes the margin of this box to align it with the top of the page */
   height: 150px; /*Makes the background color fill the entire container within the grid*/
 }
+
+/*---------- PART 3 - Product Detail Page -----------*/
+
+.return a {
+  width: 130px;
+  padding: 5px 30px 5px 30px;
+  text-align: center;
+  background-color: #D6EACD;
+  color: #607E52;
+  font-size: medium;
+    margin: 20px;
+}
+
+.productDetail a {
+  background-color: #607E52;
+  color: #D6EACD
+}
+
+.return {
+  padding-left: 6%;
+}
+
+.plutoLooksLeft {
+  width: 400px;
+  height: 400px;
+  border-radius: 30px;
+}
+
+.imageAndDescription {
+  display:flex;
+  justify-content: flex-start;
+  padding-left: 6%;
+}
+
+.writing.itemDescription {
+  padding-left: 3%;
+  padding-right: 40%;
+}
+
+.thumbNails {
+  width: 400px;
+  height: auto;
+  padding-top: 5px;
+  margin-left: 6%;
+}
+
+.h1.catBackpack {
+  font-size: larger;
+}
