@@ -56,6 +56,11 @@ li a:hover {
   color: #D6EACD;
 }  
 
+.shopAll a:hover {
+  background-color: #607E52;
+  color: #D6EACD;
+}
+
 /*Makes all text within website the same color and style*/
   .writing {
     color: #607E52;
@@ -134,8 +139,7 @@ li a:hover {
   width: 130px;
   padding: 5px 30px 5px 30px;
   text-align: center;
-  background-color: #607E52;
-  color: #D6EACD;
+ 
 }
 
 /*---------- PART 2 - Browse Shop Page -----------*/
@@ -149,6 +153,22 @@ li a:hover {
 
 }
 
+.dropdown {
+  justify-content: flex-start;
+  display: flex;
+  margin-left: 8%;
+  margin-top: 3%;
+}
+
+.writing.categoryLabel {
+  font-weight: bold;
+}
+
+#categories {
+  margin-left: 3%;
+  padding: 2px 20px;
+}
+
 .navBar.shop {
   display: flex; /* Puts list item horizontally across page by placing them in flexbox dispaly*/
   justify-content: space-between;
@@ -160,16 +180,33 @@ li a:hover {
   height: 150px; /*Makes the background color fill the entire container within the grid*/
 }
 
+.shopButton a {
+  background-color: #607E52;
+  color: #D6EACD;
+}
+
+.productRow.shopPage {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+.catBackpack {
+  background-color: white;
+  border: white;
+  text-transform: capitalize;
+  padding: 0px;
+}
+
 /*---------- PART 3 - Product Detail Page -----------*/
 
 .return a {
   width: 130px;
-  padding: 5px 30px 5px 30px;
+  padding: 10px 30px 10px 30px;
   text-align: center;
   background-color: #D6EACD;
   color: #607E52;
-  font-size: medium;
-    margin: 20px;
+  font-size: smaller;
+  margin: 40px 20px 40px 20px;
 }
 
 .productDetail a {
@@ -190,21 +227,45 @@ li a:hover {
 .imageAndDescription {
   display:flex;
   justify-content: flex-start;
-  padding-left: 6%;
+  padding-left: 7%;
 }
 
 .writing.itemDescription {
   padding-left: 3%;
-  padding-right: 40%;
+  padding-right: 35%;
 }
 
 .thumbNails {
   width: 400px;
   height: auto;
   padding-top: 5px;
-  margin-left: 6%;
+  margin-left: 7.5%;
+  margin-top: 2%;
 }
 
-.h1.catBackpack {
-  font-size: larger;
+.options {
+  display:flex;
+  flex-direction: column;
+  margin-right: 25%;
+  margin-left: -33%;
+  margin-top: 2%;
 }
+
+.addToCart {
+  width: 170px;
+  padding: 5px 25px 5px 25px;
+  text-align: center;
+  margin-left: 8%;
+}
+
+#colorOptions {
+  margin-left: 2%;
+  width: 200px;
+}
+
+#sizeOptions {
+  margin-left: 6%;
+  width: 200px;
+  margin-bottom: 20px;
+}
+

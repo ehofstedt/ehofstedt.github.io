@@ -14,27 +14,28 @@
          <div class="navBarButtons"> 
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="browseshop.html">Shop</a></li>
+        <div class="shopButton"><li><a href="browseshop.html">Shop</a></li></div>
         <li><img src="Assets/Shopping Bag.png" alt="Shopping Bag icon. Click to view your shopping bag." id="shoppingBag"></li>
         </div>
         <li> </li>
       </ul>
     </div>
     <div class="dropdown">
-        <button class="dropbtn">Shop Categories</button>
-        <div class="dropdown-content">
-            <a href="#">Dogs</a>
-            <a href="#">Cats</a>
-            <a href="#">Humans</a>
-        </div>
+        <label for="categories" class="writing categoryLabel">Select a Category:</label>
+        <select name="categories" id="categories">
+            <option value="Shop All">Shop All</option>
+            <option value="dog-gear">Dog Gear</option>
+            <option value="cat-gear">Cat Gear</option>
+            <option value="human-gear">Human Gear</option>
+        </select>
     </div>
     <div>
-        <ul class="productRow">
+        <ul class="productRow shopPage">
           <li><img src="Assets/pluto_harness.jpeg" class="productImage" alt= "A cat named Pluto wearing his harness in a living room, with his toys behind him. He hates the harness."></li>
   
           <li class="writing"><span class="productTitle">Cat harness</span><br> $30</li>
   
-          <li><img src="Assets/pluto_straighton.JPG" class="productImage" alt= "A cat named Pluto peeking his head out of a catback. The backpack is sitting in a green park on a multicolored blanket. "></li>
+          <a href="productdetail.html" class="catBackpack"><li><img src="Assets/pluto_straighton.JPG" class="productImage" alt= "A cat named Pluto peeking his head out of a catback. The backpack is sitting in a green park on a multicolored blanket. "></li></a>
   
           <li class="writing"><span class="productTitle">Cat backpack</span><br> $60</li>
   
@@ -44,7 +45,7 @@
         </ul>
       </div>
       <div>
-        <ul class="productRow">
+        <ul class="productRow shopPage">
           <li><img src="Assets/dog_rainboots.jpg" class="productImage" alt= "A small black and white dog wearing booties to protect his feet"></li>
   
           <li class="writing"><span class="productTitle">Dog booties</span><br> $40</li>
@@ -59,7 +60,7 @@
         </ul>
       </div>
       <div>
-        <ul class="productRow">
+        <ul class="productRow shopPage">
           <li><img src="Assets/heart_dog_sticker.jpg" class="productImage" alt= "A white sticker with black writing that says I Heart My Dog"></li>
   
           <li class="writing"><span class="productTitle">I Heart My Dog Sticker</span><br> $5</li>

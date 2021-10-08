@@ -8,21 +8,22 @@
   </head>
   <body class="shopBody">
     <div> 
-      <ul class="navBar shop">
-        <li> </li>
-        <li><img src="assets/Home Button.png" alt="The Muddy Paws logo, which reads Muddy Paws Adventure on All Fours " id="homeIcon"></li>
-         <div class="navBarButtons"> 
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="browseshop.html" class="productDetail">Shop</a></li>
-        <li><img src="Assets/Shopping Bag.png" alt="Shopping Bag icon. Click to view your shopping bag." id="shoppingBag"></li>
-        </div>
-        <li> </li>
-      </ul>
+        <ul class="navBar shop">
+            <li> </li>
+            <li><img src="assets/Home Button.png" alt="The Muddy Paws logo, which reads Muddy Paws Adventure on All Fours " id="homeIcon"></li>
+             <div class="navBarButtons"> 
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <div class="shopButton"><li><a href="browseshop.html">Shop</a></li></div>
+            <li><img src="Assets/Shopping Bag.png" alt="Shopping Bag icon. Click to view your shopping bag." id="shoppingBag"></li>
+            </div>
+            <li> </li>
+          </ul>
     </div>
+
     <div class="mainSection">
         <div class="return">
-            <a href="browseshop.html" class="returnButton">Return to Browsing</a>
+            <a href="browseshop.html" class="returnButton">Return to Shop</a>
         </div>
         <div class="imageAndDescription">
             <img src="assets/pluto_left.JPG" class="plutoLooksLeft">
@@ -37,10 +38,34 @@
 
                 <h3>Dimensions</h3>
                 <div>W 14'' x H 16 '' x D 12''</div>
-                
+
                 <h3>Materials</h3>
                 <div>Polyester, Mesh</div>
-                
+            </div>
+            <div class="options">
+                <div class="dropdown">
+                    <label for="colors" class="writing categoryLabel">Color:</label>
+                    <select name="colors" id="colorOptions">
+                        <option value="Shop All">Pick a Color</option>
+                        <option value="Strawberry">Strawberry</option>
+                        <option value="Blackberry">Blackberry</option>
+                        <option value="Crazy Berry">Crazy Berry</option>
+                        <option value="Fire Orange">Fire Orange</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="sizes" class="writing categoryLabel">Size:</label>
+                    <select name="categories" id="sizeOptions">
+                        <option value="Shop All">Pick a Size</option>
+                        <option value="Tiny">Tiny</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <div>
+                <a href="#" class="addToCart">Add to Cart</a>
+                </div>
             </div>
         </div>
         <div class="thumbnailImages">
