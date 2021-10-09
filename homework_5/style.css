@@ -284,58 +284,134 @@ li a:hover {
 
 /*---------- BONUS - Checkout Page -----------*/
 
+/*Create container for main portion of page under header in order to use flex and align content horizontally */
+
+.mainPage {
+  display: flex;
+  justify-content:space-around;
+  padding-top: 3%;
+}
+
+/*Alignment for Checkout Header*/
+
 .writing.checkout {
   padding-left: 10%;
-}
- .typeInfo {
-   display: flex;
-   flex-direction: column;
- }
-
-.column1 {
-  display:flex;
-  /* flex-direction: column; */
 } 
 
-/* .checkoutText {
-  display: flex;
-  justify-content: space-around;
-} */
-
+/* Alignment for 'Shipping' 'Billing' and 'Review' progress indicators */
 
 .progressBar {
   display: flex;
   align-items: center;
   padding-left:10%;
-}
+} 
 
-.cityStateZip {
-  display:flex
-}
-
-.formInputs {
-  padding: 10px;
-  padding-left:10%;
-}
+/*Re-size the arrows in the progress bar*/
 
 .rightArrow img {
   width: 80px;
   height: auto;
 }
 
-.progressButton {
-  height: 50%;
-}
+/*Change the color of the shipping pill to show where the user is in the process*/
 
 .shipping {
   background-color: #607E52;
   color: #D6EACD;
 }
-.prices {
-  list-style-type: none;
+
+/*Change the color of the Billing & Review pills*/
+
+.billingReview {
+  background-color: white;
+  color: #607E52;
 }
+
+/* Alignment for the shipping address labels and form unputs */
+
+.shippingAddress {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  font-size: large;
+  width: 70%;
+}
+
+/* Create boxes to indicate form inputs for Shipping Address */
+
+.box {
+  height: 20px;
+  width: 300px;
+  border: 2px solid #607E52;
+  border-radius: 10px;
+  fill: white;
+}
+
+/* Change the size of the City and Zip input boxes */
+
+.cityStateZip {
+  height: 20px;
+  width: 100px;
+}
+
+/* Change the size of the State input box */
+
+.state {
+  width: 50px;
+  text-align: right;
+}
+
+/*Alignment for address labels and input boxes*/
+
+.addressLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*Re-size and re-align next button*/
+
+.nextButton {
+  width: 25%;
+  margin-left: 85%;
+  text-align: center;
+}
+
+/*Alignment for right half of the page*/
+
+.pillar2 {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+  margin-top: 5%;
+}
+
+/*Re-align columns within right half of the page, to distribute evenly */
+
+.column2 {
+  width: 30%;
+  margin-top: 5%;
+}
+
+h2.checkout {
+  padding-left: 15%;
+}
+
+.column3 {
+  width: 70%;
+  margin-top: -3%;
+}
+
+/*Change size of cat backpackk image*/
 
 .plutoLooksLeft.cart {
   height: 150px;
   width: 150px;
+}
+
+/*Remove bullets from list; change size of font for final prices*/
+
+.prices {
+  list-style-type: none;
+  font-size: x-large;
 }
