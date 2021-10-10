@@ -32,8 +32,9 @@ body {
 /*Styling for the 'Muddy Paws' icon within the navigation bar*/
 
   #homeIcon {
-    width: 500px;   /*Changes the size of the icon*/
+    width: 400px;   /*Changes the size of the icon*/
     height: auto;
+    border-radius: 40px;
   }
 
 /*Styling for the all buttons in the site*/
