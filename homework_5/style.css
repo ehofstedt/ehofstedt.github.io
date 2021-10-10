@@ -34,7 +34,8 @@ body {
   #homeIcon {
     width: 400px;   /*Changes the size of the icon*/
     height: auto;
-    border-radius: 40px;
+    border-radius: 30px;
+
   }
 
 /*Styling for the all buttons in the site*/
