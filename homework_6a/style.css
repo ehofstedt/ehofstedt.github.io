@@ -8,8 +8,9 @@
 - column3 = pillar3cart
 */
 
-shoppingBag a {
-  border: none;
+.shoppingBag {
+  border-width: 0px;
+  padding: 0px;
 }
 
 .writing.shoppingCart {

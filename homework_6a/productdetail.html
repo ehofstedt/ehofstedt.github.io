@@ -5,6 +5,7 @@
     <meta name="author" content="Eleanor Hofstedt">
     <title>Muddy Paws - Adventure on All Fours</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="main.js" type="text/javascript"></script>
   </head>
   <body class="shopBody">
     <div> 
@@ -18,7 +19,7 @@
             <li><a href="shoppingcart.html" class="shoppingBag"><img src="Assets/Shopping Bag.png" alt="Shopping Bag icon. Click to view your shopping bag." id="shoppingBag"></a></li>
             </div>
             <li> </li>
-          </ul>
+        </ul>
     </div>
 
     <div class="mainSection">
@@ -63,8 +64,18 @@
                         <option value="Large">Large</option>
                     </select>
                 </div>
+                <div class="dropdown">
+                    <label for="quantity" class="writing categoryLabel">Quantity:</label>
+                    <select name="quantity" id="sizeOptions">
+                        <option value="Shop All">How many?</option>
+                        <option value="One">1</option>
+                        <option value="Two">2</option>
+                        <option value="Three">3</option>
+                        <option value="Four">4</option>
+                    </select>
+                </div>
                 <div>
-                <a href="#" class="addToCart">Add to Cart</a>
+                    <a href="#" class="addToCart">Add to Cart</a>
                 </div>
             </div>
         </div>
