@@ -27,10 +27,10 @@
             <a href="browseshop.html" class="returnButton">Return to Shop</a>
         </div>
         <div class="imageAndDescription">
-            <img src="Assets/pluto_straighton.JPG" class="plutoLooksLeft">
+            <img src="Assets/pluto_straighton.JPG" class="plutoLooksLeft" id="productImage">
             <div class="writing itemDescription">
 
-                <h1>Cat Backpack</h1>
+                <h1 id="productTitle">Cat Backpack</h1>
                 <div>$60</div>
                 <br>
 
@@ -46,17 +46,17 @@
             <div class="options">
                 <div class="dropdown">
                     <label for="colors" class="writing categoryLabel">Color:</label>
-                    <select name="colors" id="colorOptions">
+                    <select name="colors" id="colorOptions" onchange="updateColor()">
                         <option value="Shop All">Pick a Color</option>
                         <option value="Strawberry">Strawberry</option>
                         <option value="Blackberry">Blackberry</option>
-                        <option value="Crazy Berry">Crazy Berry</option>
-                        <option value="Fire Orange">Fire Orange</option>
+                        <option value="Crazyberry">Crazy Berry</option>
+                        <option value="Orange">Fire Orange</option>
                     </select>
                 </div>
                 <div class="dropdown">
                     <label for="sizes" class="writing categoryLabel">Size:</label>
-                    <select name="categories" id="sizeOptions">
+                    <select name="categories" id="sizeOptions" onchange="updatePage()">
                         <option value="Shop All">Pick a Size</option>
                         <option value="Tiny">Tiny</option>
                         <option value="Small">Small</option>
@@ -75,7 +75,7 @@
                     </select>
                 </div>
                 <div>
-                    <a href="#" class="addToCart">Add to Cart</a>
+                    <a href="#" class="addToCart" onclick="addToCart()">Add to Cart</a>
                 </div>
             </div>
         </div>
