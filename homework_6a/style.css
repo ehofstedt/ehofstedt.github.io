@@ -1,0 +1,528 @@
+/*I have put the new CSS for HW6 at the top of the style sheet*/
+
+/* ---------- Shopping Cart Page ----------- */
+
+/* New tags:
+- pillar1 = pillar1cart
+- column2 = pillar2cart
+- column3 = pillar3cart
+*/
+
+shoppingBag a {
+  border: none;
+}
+
+.writing.shoppingCart {
+  padding-left: 7.5%;
+}
+
+.pillar1cart, .pillar2cart, .pillar3cart {
+  display: flex;
+  flex-direction: column;
+}
+
+.pillar1cart {
+  width: 15%;
+}
+
+.pillar2cart {
+  width: 40%;
+}
+
+.pillar3cart {
+  width: 40%;
+}
+
+.mainPage.cart {
+  justify-content: space-evenly;
+  padding-left: 6%;
+  padding-top: 5px;
+}
+
+.returnButton.shoppingCart {
+  margin-top: 10%;
+}
+
+.returnButton a {
+  font-size: small;
+  padding: 3px 20px 3px 20px;
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
+}
+
+h2.shoppingCart {
+  padding-left: 10%;
+  margin-bottom: -2%;
+  margin-top: 10px;
+}
+
+.pillar1cart.column2 {
+  width: 100%;
+}
+
+.plutoLooksLeft.shoppingCart {
+  height: 190px;
+  width: 190px;
+}
+
+.categories.shoppingCart {
+  list-style-type: none;
+  font-size: medium;
+}
+
+.selections.shoppingCart {
+  list-style-type: none;
+  font-size: medium;
+}
+
+.categorySelections {
+  display: flex;
+}
+
+.pillar3cart .writing {
+  width:75%;
+}
+
+.categories.shoppingCart.subTotal {
+  list-style-type: none;
+  font-size: x-large;
+}
+
+.selections.shoppingCart.subTotal {
+  list-style-type: none;
+  font-size: x-large;
+  text-align: right;
+}
+
+.proceedCheckout a {
+  font-size: large;
+  padding: 3px 20px 3px 20px;
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
+}
+
+.proceedCheckout.shoppingCart {
+  margin-top: 10%;
+  width: 75%;
+}
+
+/* ---------- PART 1 - Home Page ----------- */
+
+/*Style for the body of the page*/
+
+body {
+  background-color: #D6EACD;    /*Makes background color light green*/
+  display: flex;    /*Creates a flex display for the whole body*/
+  flex-direction: column;     /*Orders flex in a column*/
+  height: 100vh;    /* Adjusts contents of body to fit within the screen*/
+  margin: 0px;    /*Deletes margin so that the background color goes to the edges of the page*/
+}
+
+/*Navigation Bar at the top of the page*/
+
+.navBar {
+    display: flex;    /* Puts list item horizontally across page by placing them in flexbox dispaly*/
+    justify-content: space-between; /*Distributes the content evenly across the width of the page*/
+    align-items: end;     /* all items are shifted down to the bottom of the nav par*/
+    list-style-type: none;    /* removes bullets from the list*/
+    padding: 0;     /* aligns items to the left */
+    background-color:white;     /* makes background of navigation bar white*/
+    margin: 0px;    /* removes the margin of this box to align it with the top of the page */
+    height: 150px;    /*Makes the background color fill the entire container within the grid*/
+  }
+
+  .navBarButtons {
+    display: flex;    /*Aligns the buttons in a horizontal row*/
+  }
+
+/*Styling for the 'Muddy Paws' icon within the navigation bar*/
+
+  #homeIcon {
+    width: 400px;   /*Changes the size of the icon*/
+    height: auto;
+    border-radius: 30px;
+
+  }
+
+/*Styling for the all buttons in the site*/
+  a {
+    display: block;
+    padding: 3px 40px 3px 40px;
+    background-color: #D6EACD;
+    border: 2px solid #607E52;
+    border-radius: 15px;
+    color: #607E52;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+/* Change the link color to darker green on hover */
+li a:hover {
+  background-color: #607E52;
+  color: #D6EACD;
+}  
+
+/* Change the link color to darker green on hover for shop all -- I wasn't sure the correct syntext to merge these two hover elements into one.*/
+
+.shopAll a:hover {
+  background-color: #607E52;
+  color: #D6EACD;
+}
+
+/*Makes all text within website the same color and style*/
+  .writing {
+    color: #607E52;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/*Styling for the Carousel below the navigation bar*/
+
+.carouselImage img {
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  border-radius: 50px;
+
+}
+/*Centering the container that holds carousel image*/
+.carouselImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spacing and alignment for 'Recommended Items' heading*/
+  h2 {
+    padding-left: 10%;
+    font-size: xx-large;
+  }
+
+  .recItems {
+    display:flex
+  }
+
+/*Spacing and alignment for the list of product items under 'Recommended items'*/
+  .productRow {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 9%;
+    padding-right: 10%;
+}
+  
+  /*Makes the list of product items into floating objects so they can be displayed horizontally*/
+  li {
+    margin: 10px;
+  }
+
+  /*Resizing the shopping bag icon*/
+
+#shoppingBag {
+    width: 35px;
+}
+/*Sizing and alignment for products under the Recommended Items*/
+
+.productImage {
+    height: 200px;
+    width: 200px;       /* Sets height/width as same to create a square image*/
+    border-radius: 30px;      /* Rounds corners of images*/
+    border: 7px solid white;      /*Creates a border around images*/
+    margin-left: 10px;
+}
+
+/*Makes all Product titles larger than their prices*/
+
+.productTitle {
+  font-size: x-large;
+}
+
+/*Style for Shop All button at bottom of page*/ 
+
+.shopAll {
+  justify-content: right;
+  display: flex;
+  padding: 20px;
+  padding-right: 10%;
+}
+
+.shopAll a {
+  width: 130px;
+  padding: 5px 30px 5px 30px;
+  text-align: center;
+ 
+}
+
+/*---------- PART 2 - Browse Shop Page -----------*/
+
+/*Changes the body to have a green header and a white background*/
+
+.shopBody {
+  background-color:white;   /*Makes background color light green*/
+  display: flex;    /*Creates a flex display for the whole body*/
+  flex-direction: column;   /*Orders flex in a column*/
+  height: 100vh;  /* Adjusts contents of body to fit within the screen*/
+  margin: 0px;    /*Deletes margin so that the background color goes to the edges of the page*/
+
+}
+
+.navBar.shop {
+  display: flex;    /* Puts list item horizontally across page by placing them in flexbox dispaly*/
+  justify-content: space-between;
+  align-items: end;     /* all items are shifted down to the bottom of the nav par*/
+  list-style-type: none;    /* removes bullets from the list*/
+  padding: 0;     /* aligns items to the left */
+  background-color:#D6EACD;     /* makes background of navigation bar white*/
+  margin: 0px;    /* removes the margin of this box to align it with the top of the page */
+  height: 150px;    /*Makes the background color fill the entire container within the grid*/
+}
+
+.shopButton a {
+  background-color: #607E52;
+  color: #D6EACD;
+}
+
+/*Alignment and sizing for the dropdown menus*/
+.dropdown {
+  justify-content: flex-start;
+  display: flex;
+  margin-left: 8%;
+  margin-top: 3%;
+}
+
+#categories {
+  margin-left: 3%;
+  padding: 2px 20px;
+}
+
+/*Make the label for the dropdown menus easier to see*/
+.writing.categoryLabel {
+  font-weight: bold;
+}
+
+/*Alignment for the product rows specifically on this page*/
+.productRow.shopPage {
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+/*Create a link out of the cat backpack image to navigate to the product detail page*/
+
+.catBackpack {
+  background-color: white;
+  border: white;
+  text-transform: capitalize;
+  padding: 0px;
+}
+
+/*---------- PART 3 - Product Detail Page -----------*/
+
+/*Alignment and spacing for 'Return to Shop' button*/
+.return a {
+  width: 130px;
+  padding: 10px 30px 10px 30px;
+  text-align: center;
+  background-color: #D6EACD;
+  color: #607E52;
+  font-size: smaller;
+  margin: 40px 20px 40px 20px;
+}
+
+.return {
+  padding-left: 6%;
+}
+
+/*Sizing and alignment for main product image*/
+.plutoLooksLeft {
+  width: 400px;
+  height: 400px;
+  border-radius: 30px;
+}
+
+/*Alignment for the main product image and the product details text*/
+.imageAndDescription {
+  display:flex;
+  justify-content: flex-start;
+  padding-left: 7%;
+}
+
+.writing.itemDescription {
+  padding-left: 3%;
+  padding-right: 35%;
+}
+
+/*Alignment for thumbnails under the main product images*/
+.thumbNails {
+  width: 400px;
+  height: auto;
+  padding-top: 5px;
+  margin-left: 7.5%;
+  margin-top: 2%;
+}
+
+/*Alignment for size and color dropdown menus*/
+.options {
+  display:flex;
+  flex-direction: column;
+  margin-right: 25%;
+  margin-left: -33%;
+  margin-top: 2%;
+}
+
+#colorOptions {
+  margin-left: 2%;
+  width: 200px;
+}
+
+#sizeOptions {
+  margin-left: 6%;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+/*Alignment for Add to Cart button*/
+.addToCart {
+  width: 170px;
+  padding: 5px 25px 5px 25px;
+  text-align: center;
+  margin-left: 8%;
+}
+
+/*---------- BONUS - Checkout Page -----------*/
+
+/*Create container for main portion of page under header in order to use flex and align content horizontally */
+
+.mainPage {
+  display: flex;
+  justify-content:space-around;
+  padding-top: 3%;
+}
+
+/*Alignment for Checkout Header*/
+
+.writing.checkout {
+  padding-left: 10%;
+} 
+
+/* Alignment for 'Shipping' 'Billing' and 'Review' progress indicators */
+
+.progressBar {
+  display: flex;
+  align-items: center;
+  padding-left:10%;
+} 
+
+/*Re-size the arrows in the progress bar*/
+
+.rightArrow img {
+  width: 80px;
+  height: auto;
+}
+
+/*Change the color of the shipping pill to show where the user is in the process*/
+
+.shipping {
+  background-color: #607E52;
+  color: #D6EACD;
+}
+
+/*Change the color of the Billing & Review pills*/
+
+.billingReview {
+  background-color: white;
+  color: #607E52;
+}
+
+/* Alignment for the shipping address labels and form unputs */
+
+.shippingAddress {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  font-size: large;
+  width: 70%;
+}
+
+/* Create boxes to indicate form inputs for Shipping Address */
+
+.box {
+  height: 20px;
+  width: 300px;
+  border: 2px solid #607E52;
+  border-radius: 10px;
+  fill: white;
+}
+
+/* Change the size of the City and Zip input boxes */
+
+.cityStateZip {
+  height: 20px;
+  width: 100px;
+}
+
+/* Change the size of the State input box */
+
+.state {
+  width: 50px;
+  text-align: right;
+}
+
+/*Alignment for address labels and input boxes*/
+
+.addressLine {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*Re-size and re-align next button*/
+
+.nextButton {
+  width: 25%;
+  margin-left: 85%;
+  text-align: center;
+}
+
+/*Alignment for right half of the page*/
+
+.pillar2 {
+  display: flex;
+  justify-content: right;
+  width: 30%;
+  margin-top: 5%;
+}
+
+/*Re-align columns within right half of the page, to distribute evenly */
+
+.column2 {
+  width: 30%;
+  margin-top: 5%;
+}
+
+h2.checkout {
+  padding-left: 15%;
+}
+
+.column3 {
+  width: 70%;
+  margin-top: -3%;
+}
+
+/*Change size of cat backpack image*/
+
+.plutoLooksLeft.cart {
+  height: 150px;
+  width: 150px;
+}
+
+/*Remove bullets from list; change size of font for final prices*/
+
+.prices {
+  list-style-type: none;
+  font-size: x-large;
+}
+
