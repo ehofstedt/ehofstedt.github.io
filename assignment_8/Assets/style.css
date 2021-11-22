@@ -1,0 +1,55 @@
+#navBar {
+    display: flex;
+    text-align: end;
+    font-family: Comfortaa;
+}
+
+#header {
+    margin: 2%;
+}
+
+#mainContain {
+    margin-top: 10%;
+}
+
+#aboutPageLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    background-color: #D9C0FE; 
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+body {
+    background-color: #F9FAFF;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-size: xx-large;
+}
+
+#hiEleanor {
+    margin-bottom: 0%;
+}
+
+.projectBox {
+    width: 200px;
+    height: 200px;
+    background: #D9C0FE;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+#projectGrid {
+    margin: 4%;
+}
