@@ -69,6 +69,10 @@ body {
       font-size: 50px;
   }
 
+  #homePageButton {
+      background-color: #6391D3;
+  }
+
 /* Styling for About Page */
 
 #mainContain {
@@ -87,7 +91,7 @@ body {
 /* Styling for Project Page */
 
 .col.projectBox {
-    margin: 25px;
+    margin: 10px;
 }
 
 #projectGrid {
@@ -99,3 +103,33 @@ body {
     filter: drop-shadow(8px 8px 10px #DCDCDC)
 }
 
+/* Styling for Contact Page */
+
+#contactLandscape {
+    width: 350px;
+    border-radius: 5px;
+}
+
+#contactImage {
+    text-align: right;
+}
+
+#contactText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+#connect {
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.contactMain {
+    margin-top: 70px;
+}
+
+.details {
+    padding-left: 5px;
+}
