@@ -73,6 +73,25 @@ body {
       background-color: #6391D3;
   }
 
+  #headshot {
+      height: 380px;
+      filter:saturate(80%);
+      border-radius: 5px;
+  }
+
+#photoColumn {
+    text-align: right;
+}  
+
+#textColumn {
+    padding-right: 10%;
+}
+
+.indexLinks {
+    color: white;
+    text-decoration: none;
+}
+
 /* Styling for About Page */
 
 #mainContain {
@@ -124,12 +143,14 @@ body {
 #connect {
     font-size: 4vw;
     font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 25px;
 }
 
 .contactMain {
     margin-top: 70px;
 }
 
-.details {
-    padding-left: 5px;
+h3 h5 {
+    font-weight: lighter;
 }
