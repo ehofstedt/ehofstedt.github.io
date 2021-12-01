@@ -41,7 +41,7 @@ body {
 /* Styling for HomePage */
 
 #homepageBg {
-    object-fit: contain;
+    background-size: cover;
     min-width: 100%;
     min-height: 100%;
 }
@@ -52,6 +52,7 @@ body {
     padding-left: 0;
     padding-right: 0;
     max-width: 100%;
+    align-items: stretch;
 }
 
 .hero-text {
@@ -67,6 +68,7 @@ body {
 
   #enterName {
       font-size: 50px;
+      width: 100%;
   }
 
   #homePageButton {
@@ -124,6 +126,11 @@ body {
 
 /* Styling for Contact Page */
 
+.banner {
+    background-image: url(file:///Users/ehofstedt/Documents/PUI/ehofstedt.github.io/assignment_8/Assets/SiriLogo3.jpg);
+    color: #F9FAFF;
+}
+
 #contactLandscape {
     width: 350px;
     border-radius: 5px;
@@ -151,6 +158,14 @@ body {
     margin-top: 70px;
 }
 
-h3 h5 {
-    font-weight: lighter;
+#projectContent {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.projectSmallText {
+    padding-left: 1%;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
 }
