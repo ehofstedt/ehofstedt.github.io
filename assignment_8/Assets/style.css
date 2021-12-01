@@ -124,12 +124,44 @@ body {
     filter: drop-shadow(8px 8px 10px #DCDCDC)
 }
 
-/* Styling for Contact Page */
-
 .banner {
-    background-image: url(file:///Users/ehofstedt/Documents/PUI/ehofstedt.github.io/assignment_8/Assets/SiriLogo3.jpg);
-    color: #F9FAFF;
+    max-width:100%;
+    max-height: 100%;
 }
+
+#projectContent {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.projectSmallText {
+    padding-left: 1%;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.methods {
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    justify-content: center;
+}
+
+.researchImages {
+    max-width:100%;
+    max-height: 100%;
+    filter: drop-shadow(1px 1px 1px #d7d7d7);
+    padding-right: 40px;
+}
+
+/* Styling for Contact Page */
 
 #contactLandscape {
     width: 350px;
@@ -158,14 +190,3 @@ body {
     margin-top: 70px;
 }
 
-#projectContent {
-    padding-left: 10%;
-    padding-right: 10%;
-}
-.projectSmallText {
-    padding-left: 1%;
-}
-
-h1, h2 {
-    font-family: 'Playfair Display', serif;
-}
