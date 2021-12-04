@@ -23,21 +23,50 @@
     </head>
 <body>
 
-    <div class="transition transition-1 is-active"></div>
+<div class="transition transition-1 is-active"></div>
 
 <div class="page">    
-    
-    <div class="container lakePicture">
-            <div class="hero-text">
-                <h1 id="enterName">ELEANOR HOFSTEDT</h1>
-                <br>
-                <a href="index.html" class="btn" id=homePageButton>Enter</a>
-            </div>
-            <img src="Assets/HomePageBackground.png" id="homepageBg">
+
+<!--Creates the top navigation bar-->
+
+<div class="container-fluid">
+    <div id="header" class="row">
+        <div class="col navBar"><a href="index.html" class="headerLinks">ELEANOR HOFSTEDT</a></div>
+        <div class="col navBar"> </div>
+        <div class="col navBar">
+            <div class="col"><a href="homepage.html" class="headerLinks">About</a></div>
+            <div class="col"><a href="projects.html" class="headerLinks">Projects</a></div>
+            <div class="col"><a href="contact.html" class="headerLinks">Contact</a></div>
+        </div>
     </div>
 </div>
 
+<!--Creates container with About Me section and headshot-->
+<div id="mainContain" class="container">
+    <div class="row">
+        
+        <div id="photoColumn" class="col">
+            <img src="Assets/headshot.jpg" id="headshot">
+        </div>
 
+        <div id="textColumn" class="col">
+            <div>
+            <p class="title" id="hiEleanor">Hi, I'm Eleanor.</p>
+            <p class="title">I'm excited to meet you!</p><br>
+            <p>I'm a UX Researcher who's passionate accesibility and advocating for all users. I'm currently getting my Master's in HCI at Carnegie Mellon University. </p>
+            <p>I was born and raised in San Francisco, and have spent the last 4 years working Silicon Valley. When I'm not at work you can find me crocheting a hat, reading a fantasy series, or backpacking in my beautiful home state.</p>
+            </div>
+            <br>
+            <div id="aboutPageLinks">
+                <div class='btn'><a href="projects.html" class="indexLinks">Projects</a></div>
+                <div class='btn'><a href="file:///Users/ehofstedt/Documents/PUI/ehofstedt.github.io/assignment_8/Assets/Eleanor_Hofstedt_Resume_2021.pdf" class="indexLinks" target="_blank">Resume</a></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
 <script src="main.js"></script>
 
 </body>
