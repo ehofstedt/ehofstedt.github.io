@@ -1,7 +1,7 @@
 /* Styling for Entire Site */
 
 .btn {
-    background-color: #D9C0FE; 
+    background-color: #8264ae; 
     border: none;
     color: white;
     padding: 8px 32px;
@@ -61,18 +61,18 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #466898;
     font-family: Comfortaa;
     margin-top: -10%;
   }
 
   #enterName {
-      font-size: 50px;
-      width: 100%;
+    font-size: 50px;
+    width: 100%;
   }
 
   #homePageButton {
-      background-color: #6391D3;
+      background-color: #466898;
   }
 
   #headshot {
@@ -201,7 +201,7 @@ h1 {
 }
 
 #backToTop {
-    color: #D9C0FE;
+    color: #8264ae;
     text-align: center;
 }
 
